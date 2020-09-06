@@ -7,7 +7,7 @@ Crear un Frame
 Component tree
 App
 |_CreateWall (creates a wxh canvas)
-    |_CreateFrame(input)
+    |_CreateFrame 
     |_FrameGrid
         |_Frame
         |_Frame
