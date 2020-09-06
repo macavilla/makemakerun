@@ -1,12 +1,7 @@
 Lo relevante va en el branch `development` 
 
-###to do:
 
-incorporar p5.js
-Crear una pared
-Crear un Frame
-
-Component tree
+##Component tree 
 ```
 App
 |_CreateWall (creates a wxh canvas)
@@ -19,3 +14,12 @@ App
         |_Frame
         |_Frame
 ```
+
+###to do:
+
+incorporar p5.js
+src/components/CanvasExample.js
+
+Crear una pared
+
+Crear un Frame

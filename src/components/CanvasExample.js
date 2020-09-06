@@ -8,7 +8,7 @@ import p5 from 'p5';
 // and the reference node (from step 2 and 3). 
 
 
-class Canvas extends React.Component {
+class CanvasExample extends React.Component {
   constructor(props) {
     super(props)
     // STEP 2: our instance needs some reference node to stand as its parent.
@@ -49,4 +49,4 @@ class Canvas extends React.Component {
 }
 
 
-export default Canvas;
+export default CanvasExample;
