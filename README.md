@@ -1,10 +1,13 @@
-to do:
+Lo relevante va en el branch `development` 
+
+###to do:
 
 incorporar p5.js
 Crear una pared
 Crear un Frame
 
 Component tree
+```
 App
 |_CreateWall (creates a wxh canvas)
     |_CreateFrame 
@@ -15,3 +18,4 @@ App
         |_Frame
         |_Frame
         |_Frame
+```
