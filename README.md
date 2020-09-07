@@ -4,15 +4,11 @@ Lo relevante va en el branch `development`
 ##Component tree 
 ```
 App
-|_CreateWall (creates a wxh canvas)
-    |_CreateFrame 
-    |_FrameGrid
-        |_Frame
-        |_Frame
-        |_Frame
-        |_Frame
-        |_Frame
-        |_Frame
+|_CreateCanvas (input -> width, input -> height, button -> handleCallback)
+|_Frame (creates a wxh canvas)
+    |_Frame
+    |_Frame
+    |_Frame
 ```
 
 ###to do:
