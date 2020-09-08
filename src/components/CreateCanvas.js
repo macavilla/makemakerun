@@ -7,7 +7,6 @@ function CreateCanvas(props) {
 
 
 
-    // handleChange
     function handleChange(e) {
         const { name, value } = e.target;
 
@@ -18,7 +17,6 @@ function CreateCanvas(props) {
             setHeight(value)
         }
     }
-    // handleClick
     function handleClick() {
 
 

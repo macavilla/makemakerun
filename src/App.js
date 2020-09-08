@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Canvas from "./components/Canvas";
 import CreateCanvas from "./components/CreateCanvas";
+import Wall from "./components/Wall";
+// import Canvas from "./components/Canvas";
 
 
 function App() {
@@ -23,15 +24,7 @@ function App() {
 
       <CreateCanvas handleCallback={handleCallback} />
 
-      <div className="canvas-wrapper">
-
-        {
-        allCanvas.map( (element, key) =>{
-          return ( <Canvas width={element.width} height={element.height} key={key} /> )
-        } )
-        }       
-         {/* <Canvas /> */}
-      </div>
+      <Wall allCanvas={allCanvas}></Wall>
 
     </div>
   );
