@@ -17,7 +17,6 @@ class Canvas extends React.Component {
      p.draw = () => {
       p.background([150, 10, 10]);
     }
-    console.log('after draw');
   }
 
   RemoveSketch = (p) => {

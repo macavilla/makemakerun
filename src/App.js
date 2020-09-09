@@ -13,10 +13,7 @@ function App() {
 
 
   function handleCallback(canvasSize) {
-    console.log('handleCallback in App');
-
     setAllCanvas([...allCanvas, canvasSize]);
-
   }
 
   return (

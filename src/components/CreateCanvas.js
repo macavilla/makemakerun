@@ -18,18 +18,8 @@ function CreateCanvas(props) {
         }
     }
     function handleClick() {
-
-
-        const canvasSize = { width: width, height: height }
-        console.log('handleClick CreateCanvas');
-        
-        console.log('width: ', width);
-        console.log('height: ', height);
-
+        const canvasSize = { width: width, height: height }        
         props.handleCallback(canvasSize);
-
-
-        console.log('acá iría el handlecallback');
     }
 
     return (
