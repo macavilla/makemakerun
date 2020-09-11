@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function CreateCanvas(props) {
 
-    const [width, setWidth] = useState(720);
-    const [height, setHeight] = useState(400);
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
 
 
