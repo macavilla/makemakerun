@@ -2,46 +2,58 @@ const Sketch = (p, width, height) => {
 // Daniel Shiffman
 // http://codingtra.in
 // http://patreon.com/codingtrain
+// Code for: https://youtu.be/IKB1hWWedMk
 
-// Video: https://youtu.be/H81Tdrmz2LA
+// Edited by SacrificeProductions
 
-// Original GIF: https://beesandbombs.tumblr.com/post/149654056864/cube-wave
+var cols, rows;
+var scl = 20;
+var w = width;
+var h = height;
 
-let angle = 0;
-let w = 24;
-let ma;
-let maxD;
+var flying = 0;
+
+var terrain = [];
 
 p.setup = () => {
   p.createCanvas(width, height, p.WEBGL);
-  ma = p.atan(p.cos(p.QUARTER_PI));
-  maxD = p.dist(0, 0, 200, 200);
+  cols = w / scl;
+  rows = h / scl;
+
+  for (var x = 0; x < cols; x++) {
+    terrain[x] = [];
+    for (var y = 0; y < rows; y++) {
+      terrain[x][y] = 0; //specify a default value for now
+    }
+  }
 }
 
 p.draw = () => {
-  p.background(255, 250, 250);
-  p.ortho(-400, 400, 400, -400, 0, 1000);
-  p.rotateX(ma);
-  p.rotateY(-p.QUARTER_PI);
-
-  for (let z = 0; z < height; z += w) {
-    for (let x = 0; x < width; x += w) {
-      p.push();
-        let d = p.dist(x, z, width / 2, height / 2);
-        let offset = p.map(d, 0, maxD, -p.PI, p.PI);
-        let a = angle + offset;
-        let h = p.floor(p.map(p.sin(a), -1, 1, 100, 300));
-        p.translate(x - width / 2, 0, z - height / 2);
-        p.normalMaterial();
-        p.box(w, h, w);
-        // p.rect(x - width / 2 + w / 2, 0, w - 2, h);
-      p.pop();
+  flying -= 0.01;
+  var yoff = flying;
+  for (var y = 0; y < rows; y++) {
+    var xoff = 0;
+    for (var x = 0; x < cols; x++) {
+      terrain[x][y] = p.map(p.noise(xoff, yoff), 0, 1, -100, 100);
+      xoff += 0.2;
     }
+    yoff += 0.2;
   }
 
-  angle -= 0.1;
+  p.background(0);
+  p.translate(0, 50);
+  p.rotateX(p.PI / 3);
+  p.fill(200, 200, 200, 50);
+  p.translate(-w / 2, -h / 2);
+  for (var y = 0; y < rows - 1; y++) {
+    p.beginShape(p.TRIANGLE_STRIP);
+    for (var x = 0; x < cols; x++) {
+      p.vertex(x * scl, y * scl, terrain[x][y]);
+      p.vertex(x * scl, (y + 1) * scl, terrain[x][y + 1]);
+    }
+    p.endShape();
+  }
 }
-
   }
 
   export default Sketch;
