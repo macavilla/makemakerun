@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import p5 from 'p5';
-import Sketch from '../../data/Visuals/directionalLight'
+import Sketch from '../../data/Sketch/current'
 
 const Canvas = (props) => {
 
