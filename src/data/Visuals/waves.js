@@ -1,6 +1,5 @@
 
-
-let Sketch = (p, width, height) => {
+const Sketch = (p, width, height) => {
      p.setup = () => {
       p.createCanvas(width, height);
       p.frameRate(30);
@@ -10,6 +9,7 @@ let Sketch = (p, width, height) => {
       p.background([150, 10, 10]);
     }
 
-
   }
+
+  export default Sketch;
 

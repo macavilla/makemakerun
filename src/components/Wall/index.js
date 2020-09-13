@@ -1,5 +1,5 @@
 import React from 'react';
-import Canvas from '../Canvas/Canvas';
+import Canvas from '../Canvas';
 
 function Wall(props) {
     const {allCanvas} = props;
