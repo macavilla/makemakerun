@@ -1,14 +1,19 @@
 
 ###to do:
 
-Crear navegador flotante con Router
+Actualizar component tree
 
-Canvas ocupa toda la pantalla unless indicated otherwise
+Update 
+
+Crear nav component flotante con rutas (Home y Random)
+
+Crear pages:
+    - path="/" Home shows current canvas
+    - path="/random/:id" muestra uno random
 
 Pasar a Funcional
     -Sketch
 
-Cómo mierda puedo pasar la función draw de Sketch.js a Canvas
 
 
 
