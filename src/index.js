@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import RandomSketch from './pages/RandomSketch'
 
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

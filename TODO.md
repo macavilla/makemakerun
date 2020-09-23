@@ -3,7 +3,8 @@
 
 Actualizar component tree
 
-Update 
+Integrar p5.createLoop para exportar gifs
+https://www.npmjs.com/package/p5.createloop
 
 Crear nav component flotante con rutas (Home y Random)
 
