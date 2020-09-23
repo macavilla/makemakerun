@@ -9,10 +9,11 @@ https://www.npmjs.com/package/p5.createloop
 Crear nav component flotante con rutas (Home y Random)
 
 Crear pages:
+index.js Router
     - path="/" Home shows current canvas
     - path="/random/:id" muestra uno random
 
-Pasar a Funcional
+Pasar a componente Funcional
     -Sketch
 
 
