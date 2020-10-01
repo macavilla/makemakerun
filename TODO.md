@@ -6,6 +6,9 @@ Actualizar component tree
 Integrar p5.createLoop para exportar gifs
 https://www.npmjs.com/package/p5.createloop
 
+Integrar p5.SceneManager ?
+https://github.com/mveteanu/p5.SceneManager
+
 Crear nav component flotante con rutas (Home y Random)
 
 Crear pages:
