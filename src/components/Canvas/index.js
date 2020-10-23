@@ -1,10 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import p5 from 'p5';
 import Sketch from '../../data/Sketch/current'
+import DefaultSketch from '../../data/Sketch/defaultSketch'
 
 const Canvas = (props) => {
 
-    const { isFullscreen } = props;
+    const { isFullscreen, isRandom, isCurrent } = props;
     const myRef = useRef();
 
     const [width] = useState(isFullscreen ? window.innerWidth : props.width);
@@ -24,7 +25,7 @@ const Canvas = (props) => {
 
 
     return (
-        <div className={'awesome canvas'} ref={myRef}> </div>
+        <div className={'awesome canvas wrapper'} ref={myRef}> </div>
     )
 };
 
