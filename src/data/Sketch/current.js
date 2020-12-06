@@ -22,7 +22,7 @@ const Sketch = (p, width, height) => {
 
   p.draw = () => {
 
-    p.background(colorPallette.blue);
+    p.background(colorPallette.green);
 
 
   }
